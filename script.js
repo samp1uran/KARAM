@@ -7,7 +7,7 @@ const translations = {
     heroDescription: "Third-party insurance, PAN, passport, Visa PCC and all your document needs — now at your own SMART ONLINE SERVICE POINT.",
     seeServices: "Explore services", talkToUs: "Talk to us", happyCustomers: "Happy customers served", customerRating: "4.9/5 customer rating",
     approved: "✓ Govt. Approved CSC Centre", cardTitle: "Simple, fast<br /><span>digital services</span>", todaysService: "Service made easy", oneClick: "Just one click away →",
-    serviceComplete: "Service completed", aadhaarUpdated: "Aadhaar update • just now", securePayment: "Secure payment", secureTransactions: "100% secure transactions",
+    serviceComplete: "Service completed", aadhaarUpdated: "Pan update • just now", securePayment: "Secure payment", secureTransactions: "100% secure transactions",
     popularServices: "Our key services", thirdParty: "Third-party insurance", passport: "Passport", drivingLicence: "Driving Licence",
     servicesEyebrow: "Our key services", servicesTitle: "Documents to insurance,<br /><span>everything in one place.</span>",
     servicesDescription: "Expert help for your everyday and essential needs, with clear guidance, the right documents, and complete transparency.",
