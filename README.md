@@ -1,4 +1,4 @@
-# Smart Sewa Kendra
+# SMART ONLINE SERVICE POINT (CSC CENTRE)
 
 Modern responsive website for a Govt. Approved CSC Centre focused on document, insurance and digital service assistance.
 
@@ -17,7 +17,7 @@ Modern responsive website for a Govt. Approved CSC Centre focused on document, i
 ## Website features
 
 - Punjabi-first responsive landing page
-- Modern Smart Sewa Kendra branding
+- SMART ONLINE SERVICE POINT (CSC CENTRE) branding
 - Responsive navigation with active section state
 - Service category filters
 - Click-to-select service cards
@@ -68,7 +68,7 @@ The project is stored in a local Git repository. The initial website commit incl
 
 - Responsive website structure
 - CSC service sections
-- Smart Sewa Kendra branding
+- SMART ONLINE SERVICE POINT (CSC CENTRE) branding
 - Header and footer design
 - WhatsApp integration
 - Animations and visual polish
