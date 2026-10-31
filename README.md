@@ -38,6 +38,8 @@ Modern responsive website for a Govt. Approved CSC Centre focused on document, i
 | `index.html` | Page structure, content, services and links |
 | `styles.css` | Responsive layout, visual design and animations |
 | `script.js` | Navigation, service filters, active cards and cursor effect |
+| `assets/smart-online-service-point-logo.png` | Supplied centre logo used in the header, hero card and footer |
+| `assets/service-*.png` | Individual illustrations displayed on their matching service cards |
 
 ## Run locally
 
