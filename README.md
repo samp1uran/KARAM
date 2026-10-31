@@ -16,7 +16,8 @@ Modern responsive website for a Govt. Approved CSC Centre focused on document, i
 
 ## Website features
 
-- Punjabi-first responsive landing page
+- Responsive landing page with English, Hindi and Punjabi translations
+- English-default language selector, visible on desktop and mobile
 - SMART ONLINE SERVICE POINT (CSC CENTRE) branding
 - Responsive navigation with active section state
 - Service category filters

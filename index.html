@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="pa">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SMART ONLINE SERVICE POINT (CSC CENTRE) — ਤੁਹਾਡੇ ਹਰ ਸਰਕਾਰੀ ਅਤੇ ਡਿਜ਼ੀਟਲ ਕੰਮ ਦਾ ਭਰੋਸੇਯੋਗ ਕੇਂਦਰ।" />
+    <meta name="description" content="SMART ONLINE SERVICE POINT (CSC CENTRE) — Your trusted centre for government and digital services." />
     <title>SMART ONLINE SERVICE POINT (CSC CENTRE)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gurmukhi:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=16" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Sans+Gurmukhi:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=17" />
   </head>
   <body>
     <div class="cursor-glow" aria-hidden="true"></div>
     <div class="topbar">
       <div class="container topbar-inner">
-        <span><span class="pulse-dot"></span> ਸੇਵਾ ਸਮਾਂ: ਸੋਮਵਾਰ – ਸ਼ਨੀਵਾਰ, ਸਵੇਰੇ 9 ਤੋਂ ਸ਼ਾਮ 7 ਵਜੇ</span>
-        <span class="topbar-contact"><span>ਤੁਰੰਤ ਸਹਾਇਤਾ</span> <a href="tel:+917009717425">+91 70097 17425</a><i>↗</i></span>
+        <span><span class="pulse-dot"></span> <span data-i18n="hours">Service hours: Monday – Saturday, 9 AM – 7 PM</span></span>
+        <span class="topbar-contact"><span data-i18n="quickSupport">Quick support</span> <a href="tel:+917009717425">+91 70097 17425</a><i>↗</i></span>
       </div>
     </div>
 
@@ -24,16 +24,17 @@
         <a class="brand" href="#" aria-label="SMART ONLINE SERVICE POINT (CSC CENTRE) home">
           <span class="brand-mark"><span>SMART ONLINE</span><small>SERVICE POINT<br />(CSC CENTRE)</small></span>
         </a>
-        <button class="menu-toggle" aria-label="ਮੀਨੂ ਖੋਲ੍ਹੋ" aria-expanded="false">
+        <label class="language-picker"><span class="sr-only">Language</span><select id="language-select" aria-label="Choose language"><option value="en" selected>English</option><option value="hi">हिन्दी</option><option value="pa">ਪੰਜਾਬੀ</option></select></label>
+        <button class="menu-toggle" aria-label="Open menu" data-i18n-aria="menuLabel" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
-        <nav class="main-nav" aria-label="ਮੁੱਖ ਮੀਨੂ">
-          <a class="active" href="#home">ਮੁੱਖ ਪੰਨਾ</a>
-          <a href="#services">ਸੇਵਾਵਾਂ</a>
-          <a href="#about">ਸਾਡੇ ਬਾਰੇ</a>
-          <a href="#process">ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</a>
-          <a href="#contact">ਸੰਪਰਕ</a>
-          <a class="nav-cta" href="tel:+917009717425">ਕਾਲ ਕਰੋ <span>↗</span></a>
+        <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="navLabel">
+          <a class="active" href="#home" data-i18n="navHome">Home</a>
+          <a href="#services" data-i18n="navServices">Services</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#process" data-i18n="navProcess">How it works</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+          <a class="nav-cta" href="tel:+917009717425"><span data-i18n="callUs">Call us</span> <span>↗</span></a>
         </nav>
       </div>
     </header>
@@ -43,29 +44,29 @@
         <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
         <div class="container hero-grid">
           <div class="hero-content">
-            <div class="eyebrow"><span class="eyebrow-line"></span> ਦਸਤਾਵੇਜ਼ ਅਤੇ ਸੁਰੱਖਿਆ ਸੇਵਾਵਾਂ</div>
-            <h1>ਤੁਹਾਡੇ ਜ਼ਰੂਰੀ ਕੰਮ,<br /><em>ਇੱਕੋ ਭਰੋਸੇਯੋਗ ਥਾਂ।</em></h1>
-            <p class="hero-description">ਥਰਡ ਪਾਰਟੀ ਇੰਸ਼ੋਰੈਂਸ, PAN, ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ PCC ਅਤੇ ਹਰ ਤਰ੍ਹਾਂ ਦੇ ਦਸਤਾਵੇਜ਼ੀ ਕੰਮ — ਹੁਣ ਤੁਹਾਡੇ ਆਪਣੇ SMART ONLINE SERVICE POINT 'ਤੇ।</p>
+            <div class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="heroEyebrow">Documents &amp; protection services</span></div>
+            <h1 data-i18n="heroTitle">Essential services,<br /><em>all in one trusted place.</em></h1>
+            <p class="hero-description" data-i18n="heroDescription">Third-party insurance, PAN, passport, Visa PCC and all your document needs — now at your own SMART ONLINE SERVICE POINT.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#services">ਸੇਵਾਵਾਂ ਵੇਖੋ <span>→</span></a>
-              <a class="button button-ghost" href="tel:+917009717425"><span class="play-icon">☎</span> ਸਾਡੇ ਨਾਲ ਗੱਲ ਕਰੋ</a>
+              <a class="button button-primary" href="#services"><span data-i18n="seeServices">Explore services</span> <span>→</span></a>
+              <a class="button button-ghost" href="tel:+917009717425"><span class="play-icon">☎</span> <span data-i18n="talkToUs">Talk to us</span></a>
             </div>
             <div class="trust-row">
               <div class="avatar-stack"><span>ਜ</span><span>ਸ</span><span>ਮ</span><span>+</span></div>
-              <div><strong>10,000+</strong><small>ਖੁਸ਼ ਗਾਹਕ ਸਾਡੇ ਨਾਲ</small></div>
+              <div><strong>10,000+</strong><small data-i18n="happyCustomers">Happy customers served</small></div>
               <div class="trust-divider"></div>
-              <div class="rating"><strong>★★★★★</strong><small>4.9/5 ਗਾਹਕ ਰੇਟਿੰਗ</small></div>
+              <div class="rating"><strong>★★★★★</strong><small data-i18n="customerRating">4.9/5 customer rating</small></div>
             </div>
           </div>
           <div class="hero-visual">
             <div class="service-card card-main">
-              <div class="card-top"><span class="mini-logo">CSC</span><span class="verified">✓ Govt. Approved CSC Centre</span></div>
+              <div class="card-top"><span class="mini-logo">CSC</span><span class="verified" data-i18n="approved">✓ Govt. Approved CSC Centre</span></div>
               <div class="card-icon hero-logo"><span>SMART ONLINE</span><small>SERVICE POINT<br />(CSC CENTRE)</small><b>✓</b></div>
-              <h3>ਸਰਲ, ਤੇਜ਼<br /><span>ਡਿਜ਼ੀਟਲ ਸੇਵਾਵਾਂ</span></h3>
-              <div class="card-bottom"><span>ਅੱਜ ਦੀ ਸੇਵਾ</span><strong>ਸਿਰਫ਼ ਇੱਕ ਕਲਿੱਕ ਦੂਰ →</strong></div>
+              <h3 data-i18n="cardTitle">Simple, fast<br /><span>digital services</span></h3>
+              <div class="card-bottom"><span data-i18n="todaysService">Service made easy</span><strong data-i18n="oneClick">Just one click away →</strong></div>
             </div>
-            <div class="float-card float-card-one"><span class="float-icon icon-green">✓</span><div><strong>ਸੇਵਾ ਪੂਰੀ ਹੋਈ</strong><small>ਆਧਾਰ ਅਪਡੇਟ • ਹੁਣੇ</small></div></div>
-            <div class="float-card float-card-two"><span class="float-icon icon-orange">₹</span><div><strong>ਭੁਗਤਾਨ ਸੁਰੱਖਿਅਤ</strong><small>100% ਸੁਰੱਖਿਅਤ ਲੈਣ-ਦੇਣ</small></div></div>
+            <div class="float-card float-card-one"><span class="float-icon icon-green">✓</span><div><strong data-i18n="serviceComplete">Service completed</strong><small data-i18n="aadhaarUpdated">Aadhaar update • just now</small></div></div>
+            <div class="float-card float-card-two"><span class="float-icon icon-orange">₹</span><div><strong data-i18n="securePayment">Secure payment</strong><small data-i18n="secureTransactions">100% secure transactions</small></div></div>
             <div class="sun-orb"></div>
           </div>
         </div>
@@ -73,58 +74,58 @@
 
       <section class="service-strip">
         <div class="container strip-inner">
-          <span class="strip-label">ਸਾਡੀਆਂ ਮੁੱਖ ਸੇਵਾਵਾਂ</span>
-          <div class="strip-items"><span>ਥਰਡ ਪਾਰਟੀ ਇੰਸ਼ੋਰੈਂਸ</span><i>•</i><span>PAN Card</span><i>•</i><span>Passport</span><i>•</i><span>Visa PCC</span><i>•</i><span>ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ</span></div>
+          <span class="strip-label" data-i18n="popularServices">Our key services</span>
+          <div class="strip-items"><span data-i18n="thirdParty">Third-party insurance</span><i>•</i><span>PAN Card</span><i>•</i><span data-i18n="passport">Passport</span><i>•</i><span>Visa PCC</span><i>•</i><span data-i18n="drivingLicence">Driving Licence</span></div>
         </div>
       </section>
 
       <section class="services section-pad" id="services">
         <div class="container">
           <div class="section-heading">
-            <div><div class="eyebrow"><span class="eyebrow-line"></span> ਸਾਡੀਆਂ ਮੁੱਖ ਸੇਵਾਵਾਂ</div><h2>ਦਸਤਾਵੇਜ਼ ਤੋਂ ਬੀਮੇ ਤੱਕ,<br /><span>ਸਾਰਾ ਕੰਮ ਇੱਕ ਥਾਂ।</span></h2></div>
-            <p>ਤੁਹਾਡੇ ਰੋਜ਼ਾਨਾ ਅਤੇ ਜ਼ਰੂਰੀ ਕੰਮਾਂ ਲਈ ਮਾਹਰ ਸਹਾਇਤਾ, ਸਹੀ ਦਸਤਾਵੇਜ਼ ਅਤੇ ਪੂਰੀ ਪਾਰਦਰਸ਼ਤਾ।</p>
+            <div><div class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="servicesEyebrow">Our key services</span></div><h2 data-i18n="servicesTitle">Documents to insurance,<br /><span>everything in one place.</span></h2></div>
+            <p data-i18n="servicesDescription">Expert help for your everyday and essential needs, with clear guidance, the right documents, and complete transparency.</p>
           </div>
           <div class="service-tabs" role="tablist">
-            <button class="tab active" data-filter="all">ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ</button><button class="tab" data-filter="gov">ਸਰਕਾਰੀ ਕੰਮ</button><button class="tab" data-filter="finance">ਬੈਂਕਿੰਗ ਅਤੇ ਵਿੱਤ</button><button class="tab" data-filter="document">ਦਸਤਾਵੇਜ਼</button>
+            <button class="tab active" data-filter="all" data-i18n="allServices">All services</button><button class="tab" data-filter="gov" data-i18n="governmentWork">Government services</button><button class="tab" data-filter="finance" data-i18n="finance">Banking &amp; finance</button><button class="tab" data-filter="document" data-i18n="documents">Documents</button>
           </div>
           <div class="service-grid">
-            <article class="service-tile" data-category="finance"><span class="tile-number">01</span><div class="tile-icon">◒</div><h3>ਥਰਡ ਪਾਰਟੀ ਇੰਸ਼ੋਰੈਂਸ</h3><p>ਵਾਹਨ ਲਈ third-party insurance ਅਤੇ policy renewal ਸਹਾਇਤਾ।</p><a href="#contact">ਕੋਟ ਲਵੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="document"><span class="tile-number">02</span><div class="tile-icon">▤</div><h3>PAN Card</h3><p>ਨਵਾਂ PAN, correction, reprint ਅਤੇ application status।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="gov"><span class="tile-number">03</span><div class="tile-icon">◎</div><h3>Voter Card</h3><p>ਨਵੀਂ voter ID, correction, address update ਅਤੇ print।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="document"><span class="tile-number">04</span><div class="tile-icon">▱</div><h3>Passport Service</h3><p>Passport form, appointment booking ਅਤੇ status check।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="gov"><span class="tile-number">05</span><div class="tile-icon">➜</div><h3>Driving Licence</h3><p>ਲਾਇਸੈਂਸ application, renewal, learning ਅਤੇ print ਸਹਾਇਤਾ।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="document"><span class="tile-number">06</span><div class="tile-icon">✈</div><h3>Visa &amp; Visa PCC</h3><p>ਵੀਜ਼ਾ documents, police clearance ਅਤੇ application guidance।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="document"><span class="tile-number">07</span><div class="tile-icon">✓</div><h3>Character PCC</h3><p>Character certificate ਅਤੇ PCC ਲਈ form/document ਸਹਾਇਤਾ।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="document"><span class="tile-number">08</span><div class="tile-icon">⌑</div><h3>Patiala House Stamp</h3><p>Stamp, affidavit ਅਤੇ ਕਿਸੇ ਵੀ document work ਲਈ ਸਹਾਇਤਾ।</p><a href="#contact">ਵਧੇਰੇ ਜਾਣੋ <span>↗</span></a></article>
-            <article class="service-tile" data-category="gov"><span class="tile-number">09</span><div class="tile-icon">+</div><h3>ਹੋਰ CSC ਸੇਵਾਵਾਂ</h3><p>ਆਧਾਰ, ਬੈਂਕਿੰਗ, ਬਿੱਲ ਭੁਗਤਾਨ, ਸਰਕਾਰੀ ਯੋਜਨਾਵਾਂ ਅਤੇ ਹੋਰ।</p><a href="#contact">ਸਭ ਵੇਖੋ <span>↗</span></a></article>
+            <article class="service-tile" data-category="finance"><span class="tile-number">01</span><div class="tile-icon">◒</div><h3 data-i18n="thirdParty">Third-party insurance</h3><p data-i18n="thirdPartyDesc">Third-party vehicle insurance and policy renewal assistance.</p><a href="#contact" data-i18n="getQuote">Get a quote <span>↗</span></a></article>
+            <article class="service-tile" data-category="document"><span class="tile-number">02</span><div class="tile-icon">▤</div><h3>PAN Card</h3><p data-i18n="panDesc">New PAN applications, corrections, reprints and status checks.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="gov"><span class="tile-number">03</span><div class="tile-icon">◎</div><h3 data-i18n="voterCard">Voter Card</h3><p data-i18n="voterDesc">New voter ID, corrections, address updates and print assistance.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="document"><span class="tile-number">04</span><div class="tile-icon">▱</div><h3 data-i18n="passportService">Passport Service</h3><p data-i18n="passportDesc">Passport forms, appointment booking and application status checks.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="gov"><span class="tile-number">05</span><div class="tile-icon">➜</div><h3 data-i18n="drivingLicence">Driving Licence</h3><p data-i18n="licenceDesc">Help with licence applications, renewals, learner permits and prints.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="document"><span class="tile-number">06</span><div class="tile-icon">✈</div><h3>Visa &amp; Visa PCC</h3><p data-i18n="visaDesc">Visa documents, police clearance and application guidance.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="document"><span class="tile-number">07</span><div class="tile-icon">✓</div><h3>Character PCC</h3><p data-i18n="characterDesc">Character certificates and PCC form/document assistance.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="document"><span class="tile-number">08</span><div class="tile-icon">⌑</div><h3>Patiala House Stamp</h3><p data-i18n="stampDesc">Stamp, affidavit and assistance with all kinds of document work.</p><a href="#contact" data-i18n="learnMore">Learn more <span>↗</span></a></article>
+            <article class="service-tile" data-category="gov"><span class="tile-number">09</span><div class="tile-icon">+</div><h3 data-i18n="otherCsc">Other CSC Services</h3><p data-i18n="otherCscDesc">Aadhaar, banking, bill payments, government schemes and more.</p><a href="#contact" data-i18n="seeAll">See all <span>↗</span></a></article>
           </div>
-          <div class="service-note"><span>✓</span> ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ ਪਾਰਦਰਸ਼ੀ ਕੀਮਤ ਅਤੇ ਰਸੀਦ ਨਾਲ</div>
+          <div class="service-note"><span>✓</span> <span data-i18n="transparentPricing">All services with transparent pricing and receipts</span></div>
         </div>
       </section>
 
       <section class="why-section" id="about">
         <div class="container why-grid">
-          <div class="why-art"><div class="art-circle"></div><div class="art-card art-card-main"><span>✓</span><strong>100%</strong><small>ਭਰੋਸਾ ਅਤੇ ਸੁਰੱਖਿਆ</small></div><div class="art-card art-card-side"><strong>15+</strong><small>ਸਾਲਾਂ ਦਾ ਤਜਰਬਾ</small></div><div class="art-dots">• • •<br />• • •<br />• • •</div></div>
-          <div class="why-copy"><div class="eyebrow"><span class="eyebrow-line"></span> SMART ONLINE SERVICE POINT ਕਿਉਂ?</div><h2>ਤੁਹਾਡਾ ਕੰਮ,<br /><span>ਸਾਡਾ ਵਾਅਦਾ।</span></h2><p>ਅਸੀਂ ਸਿਰਫ਼ ਸੇਵਾ ਨਹੀਂ ਦਿੰਦੇ — ਅਸੀਂ ਤੁਹਾਡਾ ਕੀਮਤੀ ਸਮਾਂ ਬਚਾਉਂਦੇ ਹਾਂ ਅਤੇ ਹਰ ਕੰਮ ਨੂੰ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਪੂਰਾ ਕਰਦੇ ਹਾਂ।</p><div class="benefit-list"><div><b>01</b><span><strong>ਸੌਖਾ ਤਰੀਕਾ</strong><small>ਬਿਨਾਂ ਕਿਸੇ ਪਰੇਸ਼ਾਨੀ ਦੇ ਸਿੱਧੀ ਅਤੇ ਸਪੱਸ਼ਟ ਸੇਵਾ।</small></span></div><div><b>02</b><span><strong>ਭਰੋਸੇਯੋਗ ਸਹਾਇਤਾ</strong><small>ਸਾਡੀ ਮਾਹਰ ਟੀਮ ਹਰ ਕਦਮ 'ਤੇ ਤੁਹਾਡੇ ਨਾਲ।</small></span></div><div><b>03</b><span><strong>ਸੁਰੱਖਿਅਤ ਲੈਣ-ਦੇਣ</strong><small>ਤੁਹਾਡਾ ਡਾਟਾ ਅਤੇ ਪੈਸਾ, ਸਾਡੀ ਪੂਰੀ ਜ਼ਿੰਮੇਵਾਰੀ।</small></span></div></div></div>
+          <div class="why-art"><div class="art-circle"></div><div class="art-card art-card-main"><span>✓</span><strong>100%</strong><small data-i18n="trustSecurity">Trust &amp; security</small></div><div class="art-card art-card-side"><strong>15+</strong><small data-i18n="yearsExperience">Years of experience</small></div><div class="art-dots">• • •<br />• • •<br />• • •</div></div>
+          <div class="why-copy"><div class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="whyUs">Why SMART ONLINE SERVICE POINT?</span></div><h2 data-i18n="promiseTitle">Your work,<br /><span>our promise.</span></h2><p data-i18n="whyDescription">We do more than provide services — we save your valuable time and help get every task done right.</p><div class="benefit-list"><div><b>01</b><span><strong data-i18n="simpleProcess">A simple process</strong><small data-i18n="simpleProcessDesc">Straightforward service with no unnecessary hassle.</small></span></div><div><b>02</b><span><strong data-i18n="reliableSupport">Reliable support</strong><small data-i18n="reliableSupportDesc">Our experienced team guides you at every step.</small></span></div><div><b>03</b><span><strong data-i18n="safeTransactions">Secure transactions</strong><small data-i18n="safeTransactionsDesc">Your data and payments are handled responsibly.</small></span></div></div></div>
         </div>
       </section>
 
       <section class="process section-pad" id="process">
-        <div class="container"><div class="center-heading"><div class="eyebrow"><span class="eyebrow-line"></span> ਬਿਲਕੁਲ ਸੌਖਾ</div><h2>ਤੁਹਾਡਾ ਕੰਮ <span>ਤਿੰਨ ਕਦਮਾਂ ਵਿੱਚ।</span></h2></div><div class="process-grid"><div><span class="step">01</span><h3>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</h3><p>ਕਾਲ ਕਰੋ ਜਾਂ ਕੇਂਦਰ 'ਤੇ ਆਓ ਅਤੇ ਆਪਣੀ ਲੋੜ ਦੱਸੋ।</p></div><div><span class="step">02</span><h3>ਦਸਤਾਵੇਜ਼ ਦਿਓ</h3><p>ਸਾਡੇ ਮਾਹਰ ਤੁਹਾਨੂੰ ਸਹੀ ਦਸਤਾਵੇਜ਼ਾਂ ਬਾਰੇ ਦੱਸਣਗੇ।</p></div><div><span class="step">03</span><h3>ਕੰਮ ਪੂਰਾ ਪਾਓ</h3><p>ਆਪਣਾ ਕੰਮ ਜਲਦੀ ਅਤੇ ਪੂਰੀ ਸੁਰੱਖਿਆ ਨਾਲ ਪੂਰਾ ਪਾਓ।</p></div></div></div>
+        <div class="container"><div class="center-heading"><div class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="easySteps">Simple as 1-2-3</span></div><h2 data-i18n="threeSteps">Get it done <span>in three easy steps.</span></h2></div><div class="process-grid"><div><span class="step">01</span><h3 data-i18n="stepContact">Get in touch</h3><p data-i18n="stepContactDesc">Call us or visit the centre and tell us what you need.</p></div><div><span class="step">02</span><h3 data-i18n="stepDocuments">Share your documents</h3><p data-i18n="stepDocumentsDesc">Our team will guide you on the documents required.</p></div><div><span class="step">03</span><h3 data-i18n="stepComplete">Get it done</h3><p data-i18n="stepCompleteDesc">Get your task completed quickly and securely.</p></div></div></div>
       </section>
 
-      <section class="contact-banner" id="contact"><div class="container contact-inner"><div><div class="eyebrow light"><span class="eyebrow-line"></span> ਅੱਜ ਹੀ ਮਿਲੋ</div><h2>ਤੁਹਾਡਾ ਅਗਲਾ ਕੰਮ,<br /><em>ਅਸੀਂ ਕਰਾਂਗੇ ਆਸਾਨ।</em></h2></div><div class="contact-action"><p>ਕੋਈ ਸਵਾਲ ਹੈ? ਸਾਡੇ ਨਾਲ ਗੱਲ ਕਰੋ।</p><a class="button button-dark" href="tel:+917009717425">+91 70097 17425 <span>↗</span></a></div></div></section>
+      <section class="contact-banner" id="contact"><div class="container contact-inner"><div><div class="eyebrow light"><span class="eyebrow-line"></span> <span data-i18n="meetToday">Visit us today</span></div><h2 data-i18n="contactTitle">Your next task,<br /><em>made easier.</em></h2></div><div class="contact-action"><p data-i18n="contactQuestion">Have a question? Talk to our team.</p><a class="button button-dark" href="tel:+917009717425">+91 70097 17425 <span>↗</span></a></div></div></section>
     </main>
-    <a class="whatsapp-float" href="https://wa.me/917009717425?text=Sat%20Sri%20Akal%2C%20main%20Smart%20CSC%20di%20service%20bare%20jaankari%20laina%20chaunda%20haan." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ਤੇ ਸਿੱਧਾ ਸੰਪਰਕ ਕਰੋ"><span class="whatsapp-icon">◉</span><span class="whatsapp-label">WhatsApp ਕਰੋ</span><b>↗</b></a>
+    <a class="whatsapp-float" href="https://wa.me/917009717425?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" aria-label="Contact us directly on WhatsApp" data-i18n-aria="whatsappAria"><span class="whatsapp-icon">◉</span><span class="whatsapp-label" data-i18n="whatsappUs">WhatsApp us</span><b>↗</b></a>
     <footer>
       <div class="container footer-main">
-        <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark"><span>SMART ONLINE</span><small>SERVICE POINT<br />(CSC CENTRE)</small></span></a><p>Govt. Approved CSC Centre<br />ਤੁਹਾਡਾ ਭਰੋਸੇਯੋਗ ਡਿਜ਼ੀਟਲ ਸਾਥੀ।</p><div class="social-links"><a href="tel:+917009717425" aria-label="Call SMART ONLINE SERVICE POINT">☎</a><a href="https://wa.me/917009717425" aria-label="WhatsApp SMART ONLINE SERVICE POINT">◉</a><a href="#services" aria-label="View services">↗</a></div></div>
-        <div class="footer-column"><h3>ਮੁੱਖ ਸੇਵਾਵਾਂ</h3><a href="#services">PAN Card</a><a href="#services">Passport Service</a><a href="#services">Driving Licence</a><a href="#services">Visa &amp; PCC</a></div>
-        <div class="footer-column"><h3>ਸਹਾਇਤਾ</h3><a href="#about">ਸਾਡੇ ਬਾਰੇ</a><a href="#process">ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</a><a href="#contact">ਸੰਪਰਕ ਕਰੋ</a><a href="#services">ਹੋਰ CSC ਸੇਵਾਵਾਂ</a></div>
-        <div class="footer-contact"><span class="footer-kicker">ਸਿੱਧਾ ਸੰਪਰਕ</span><a href="tel:+917009717425">+91 70097 17425</a><small>ਸੋਮਵਾਰ – ਸ਼ਨੀਵਾਰ<br />ਸਵੇਰੇ 9 ਤੋਂ ਸ਼ਾਮ 7 ਵਜੇ</small></div>
+        <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark"><span>SMART ONLINE</span><small>SERVICE POINT<br />(CSC CENTRE)</small></span></a><p><span data-i18n="approvedFull">Govt. Approved CSC Centre</span><br /><span data-i18n="trustedDigitalPartner">Your trusted digital service partner.</span></p><div class="social-links"><a href="tel:+917009717425" aria-label="Call SMART ONLINE SERVICE POINT">☎</a><a href="https://wa.me/917009717425" aria-label="WhatsApp SMART ONLINE SERVICE POINT">◉</a><a href="#services" aria-label="View services">↗</a></div></div>
+        <div class="footer-column"><h3 data-i18n="keyServices">Key services</h3><a href="#services">PAN Card</a><a href="#services" data-i18n="passportService">Passport Service</a><a href="#services" data-i18n="drivingLicence">Driving Licence</a><a href="#services">Visa &amp; PCC</a></div>
+        <div class="footer-column"><h3 data-i18n="support">Support</h3><a href="#about" data-i18n="navAbout">About</a><a href="#process" data-i18n="navProcess">How it works</a><a href="#contact" data-i18n="navContact">Contact</a><a href="#services" data-i18n="otherCsc">Other CSC Services</a></div>
+        <div class="footer-contact"><span class="footer-kicker" data-i18n="directContact">Direct contact</span><a href="tel:+917009717425">+91 70097 17425</a><small data-i18n="footerHours">Monday – Saturday<br />9 AM – 7 PM</small></div>
       </div>
-      <div class="container footer-bottom"><span>© 2026 SMART ONLINE SERVICE POINT (CSC CENTRE). ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ ਹਨ।</span><span>Site is maintained by <a href="https://sharpgbs.in" target="_blank" rel="noopener noreferrer">SharpGBS</a></span></div>
+      <div class="container footer-bottom"><span data-i18n="copyright">© 2026 SMART ONLINE SERVICE POINT (CSC CENTRE). All rights reserved.</span><span><span data-i18n="maintainedBy">Site is maintained by</span> <a href="https://sharpgbs.in" target="_blank" rel="noopener noreferrer">SharpGBS</a></span></div>
     </footer>
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>
