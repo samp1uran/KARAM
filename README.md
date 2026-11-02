@@ -20,6 +20,7 @@ Modern responsive website for a Govt. Approved CSC Centre focused on document, i
 - English-default language selector, visible on desktop and mobile
 - SMART ONLINE SERVICE POINT (CSC CENTRE) branding
 - Responsive navigation with active section state
+- Continuously scrolling topbar service ticker that updates from the service cards
 - Service category filters
 - Click-to-select service cards
 - Direct phone call links

@@ -12,13 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Sans+Gurmukhi:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=23" />
+    <link rel="stylesheet" href="styles.css?v=24" />
   </head>
   <body>
     <div class="cursor-glow" aria-hidden="true"></div>
     <div class="topbar">
       <div class="container topbar-inner">
-        <span><span class="pulse-dot"></span> <span data-i18n="hours">Service hours: Monday – Saturday, 9 AM – 7 PM</span></span>
+        <div class="topbar-services" role="region" aria-label="Services offered" data-i18n-aria="servicesTickerAria">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <div class="topbar-ticker"><div class="topbar-ticker-track"></div></div>
+        </div>
         <span class="topbar-contact"><span data-i18n="quickSupport">Quick support</span> <a href="tel:+917009717425">+91 70097 17425</a><i>↗</i></span>
       </div>
     </div>

@@ -1,6 +1,7 @@
 const translations = {
   en: {
     navLabel: "Main navigation", menuLabel: "Open menu", whatsappAria: "Contact us directly on WhatsApp",
+    servicesTickerAria: "Services offered",
     hours: "Service hours: Monday – Saturday, 9 AM – 7 PM", quickSupport: "Quick support",
     navHome: "Home", navServices: "Services", navAbout: "About", navProcess: "How it works", navContact: "Contact", callUs: "Call us",
     heroEyebrow: "Documents & protection services", heroTitle: "Essential services,<br /><em>all in one trusted place.</em>",
@@ -38,6 +39,7 @@ const translations = {
   },
   hi: {
     navLabel: "मुख्य नेविगेशन", menuLabel: "मेन्यू खोलें", whatsappAria: "WhatsApp पर सीधे संपर्क करें",
+    servicesTickerAria: "उपलब्ध सेवाएँ",
     hours: "सेवा समय: सोमवार–शनिवार, सुबह 9 से शाम 7 बजे", quickSupport: "तुरंत सहायता",
     navHome: "होम", navServices: "सेवाएँ", navAbout: "हमारे बारे में", navProcess: "काम कैसे होता है", navContact: "संपर्क", callUs: "कॉल करें",
     heroEyebrow: "दस्तावेज़ और सुरक्षा सेवाएँ", heroTitle: "आपकी ज़रूरी सेवाएँ,<br /><em>एक भरोसेमंद जगह पर।</em>",
@@ -75,6 +77,7 @@ const translations = {
   },
   pa: {
     navLabel: "ਮੁੱਖ ਮੀਨੂ", menuLabel: "ਮੀਨੂ ਖੋਲ੍ਹੋ", whatsappAria: "WhatsApp 'ਤੇ ਸਿੱਧਾ ਸੰਪਰਕ ਕਰੋ",
+    servicesTickerAria: "ਉਪਲਬਧ ਸੇਵਾਵਾਂ",
     hours: "ਸੇਵਾ ਸਮਾਂ: ਸੋਮਵਾਰ – ਸ਼ਨੀਵਾਰ, ਸਵੇਰੇ 9 ਤੋਂ ਸ਼ਾਮ 7 ਵਜੇ", quickSupport: "ਤੁਰੰਤ ਸਹਾਇਤਾ",
     navHome: "ਮੁੱਖ ਪੰਨਾ", navServices: "ਸੇਵਾਵਾਂ", navAbout: "ਸਾਡੇ ਬਾਰੇ", navProcess: "ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ", navContact: "ਸੰਪਰਕ", callUs: "ਕਾਲ ਕਰੋ",
     heroEyebrow: "ਦਸਤਾਵੇਜ਼ ਅਤੇ ਸੁਰੱਖਿਆ ਸੇਵਾਵਾਂ", heroTitle: "ਤੁਹਾਡੇ ਜ਼ਰੂਰੀ ਕੰਮ,<br /><em>ਇੱਕੋ ਭਰੋਸੇਯੋਗ ਥਾਂ।</em>",
@@ -115,11 +118,44 @@ const translations = {
 const languageSelect = document.querySelector("#language-select");
 const pageDescription = document.querySelector('meta[name="description"]');
 const whatsappLink = document.querySelector(".whatsapp-float");
+const serviceTickerTrack = document.querySelector(".topbar-ticker-track");
+const serviceGrid = document.querySelector(".service-grid");
 const whatsappMessages = {
   en: "Hello, I would like to know more about your services.",
   hi: "नमस्ते, मुझे आपकी सेवाओं के बारे में अधिक जानकारी चाहिए।",
   pa: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂ ਤੁਹਾਡੀਆਂ ਸੇਵਾਵਾਂ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣੀ ਚਾਹੁੰਦਾ ਹਾਂ।"
 };
+
+function updateServiceTicker() {
+  if (!serviceTickerTrack || !serviceGrid) {
+    return;
+  }
+
+  const serviceNames = Array.from(serviceGrid.querySelectorAll(".service-tile h3"))
+    .map((heading) => heading.textContent.trim())
+    .filter(Boolean);
+
+  if (serviceNames.length === 0) {
+    return;
+  }
+
+  const createGroup = (isDuplicate) => {
+    const group = document.createElement("span");
+    group.className = "topbar-ticker-group";
+    if (isDuplicate) {
+      group.setAttribute("aria-hidden", "true");
+    }
+    serviceNames.forEach((name) => {
+      const item = document.createElement("span");
+      item.className = "topbar-ticker-item";
+      item.textContent = name;
+      group.append(item);
+    });
+    return group;
+  };
+
+  serviceTickerTrack.replaceChildren(createGroup(false), createGroup(true));
+}
 
 function setLanguage(language) {
   const selectedTranslations = translations[language] || translations.en;
@@ -130,6 +166,7 @@ function setLanguage(language) {
       element.innerHTML = translatedText;
     }
   });
+  updateServiceTicker();
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
     const translatedLabel = selectedTranslations[element.dataset.i18nAria];
     if (translatedLabel) {
@@ -155,6 +192,11 @@ if (languageSelect) {
   languageSelect.addEventListener("change", () => setLanguage(languageSelect.value));
 }
 setLanguage("en");
+
+if (serviceGrid && serviceTickerTrack) {
+  const serviceGridObserver = new MutationObserver(updateServiceTicker);
+  serviceGridObserver.observe(serviceGrid, { childList: true, characterData: true, subtree: true });
+}
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
